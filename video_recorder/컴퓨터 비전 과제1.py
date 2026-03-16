@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("rtsp://210.99.70.120:1935/live/cctv001.stream")
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 fps = 20.0
 out = cv2.VideoWriter('output.avi', fourcc, fps, (640, 480)) # 저장할 파일 이름, 코덱, 프레임 속도, 해상도
